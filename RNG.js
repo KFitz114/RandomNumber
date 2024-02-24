@@ -28,6 +28,7 @@ submit.addEventListener("click", function() {
         attempts.innerText = "Your attempts: " + tries;
     }
     if (guess.value == answer) {
+        console.logg("guess: ", guess);
         correct++;
         tries++;
         response.innerText = "You guessed correctly";
